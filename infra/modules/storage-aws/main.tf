@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "this" {
-  bucket = "${var.name}-bucket"
+  bucket = "${var.name}-bucket-1010101010101" # S3 bucket names must be globally unique
   tags   = merge(var.tags, { Name = "${var.name}-bucket" })
 }
 
